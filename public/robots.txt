@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moneymarathon.pages.dev/sitemap.xml
+
