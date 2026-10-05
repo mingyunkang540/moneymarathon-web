@@ -36,9 +36,9 @@
 - 보고서는 로컬 `artifacts/lighthouse.report.html`과 `.json`에 있습니다. `artifacts/`는 생성물이라 Git에서 제외됩니다. Lighthouse CLI는 프로젝트 runtime 의존성으로 설치하지 않았습니다.
 - screenshots: `artifacts/desktop.png`, `artifacts/mobile.png`, `artifacts/mobile-result.png`. 화면을 직접 확인했습니다.
 
-## 배포 전 남은 설정
+## 공개 배포와 남은 확인
 
 1. **Play Store 연결 완료**: 소유자가 제공한 실제 앱 주소를 src/config.ts에 연결했습니다. 실제 앱 이동은 공개 배포 후 휴대폰에서도 확인하세요.
-2. **실제 도메인**: 현재 `https://moneymarathon.pages.dev` 가정. index metadata/JSON-LD, robots, sitemap을 실제 주소에 맞추세요.
-3. **실제 웹 배포**: GitHub 저장소는 mingyunkang540/moneymarathon-web입니다. Cloudflare Pages에 연결·배포하는 단계가 남아 있습니다. README에 main / npm run build / dist / Node 환경설정을 문서화했습니다.
+2. **실제 도메인 반영**: `https://moneymarathon-web.pages.dev`에 공개 배포되었으며 HTTP 200과 Cloudflare 보안 헤더를 확인했습니다. index metadata/JSON-LD, robots, sitemap을 실제 주소로 수정했습니다.
+3. **실제 웹 배포 완료**: GitHub 저장소 mingyunkang540/moneymarathon-web의 main 브랜치와 Cloudflare Pages를 연결했습니다. README에 main / npm run build / dist / Node 환경설정을 문서화했습니다.
 4. HTTPS 운영 도메인에서 OS 공유 동작, 앱 설치 이동, Lighthouse, 검색 도구 sitemap 등록을 확인하세요.

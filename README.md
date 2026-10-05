@@ -92,7 +92,7 @@ Vite 환경변수는 빌드 시점에 적용됩니다. 변경 후 **다시 빌�
 
 한 개의 h1, 한국어 title/description, canonical, OG/Twitter 카드, WebApplication 구조화 데이터, 설명 콘텐츠, FAQ, robots, sitemap을 제공합니다. 빌드 시 `react-dom/server`로 초기 화면을 정적 HTML에 포함하므로 검색엔진이 JavaScript 실행 없이도 내용을 읽을 수 있습니다. 브라우저는 이를 hydrate하여 계산 기능을 연결합니다. 이 과정은 빌드 시에만 수행되며 배포되는 서버는 없습니다. OG 이미지는 1200×630 PNG이며 약 27KB입니다. 외부 폰트나 대형 Hero 이미지는 없습니다.
 
-초기 도메인은 요구사항의 가정인 **`https://moneymarathon.pages.dev`**입니다. 실제 호스팅 주소와 다를 경우 다음을 **모두** 수정하세요.
+공개 배포 주소는 **`https://moneymarathon-web.pages.dev`**입니다. 도메인을 변경할 경우 다음을 **모두** 수정하세요.
 
 1. `index.html`: canonical, `og:url`, `og:image`, `twitter:image`, JSON-LD의 `url`.
 2. `public/robots.txt`: Sitemap 주소.
@@ -109,7 +109,7 @@ Vite 환경변수는 빌드 시점에 적용됩니다. 변경 후 **다시 빌�
 5. 배포 후 실제 도메인과 위 SEO URL을 맞추고 다시 배포합니다.
 6. 휴대폰에서 계산, 공유, 실제 앱 상세 페이지 이동을 확인하고 Google Search Console/Naver Search Advisor에 sitemap을 제출합니다.
 
-GitHub 저장소는 `https://github.com/mingyunkang540/moneymarathon-web`입니다. Cloudflare 계정에서 저장소를 연결해 배포하세요. 배포 결과물은 정적 `dist`뿐이며 Cloudflare Functions가 필요 없습니다. `public/_headers`는 보안 헤더를 제공합니다.
+GitHub 저장소는 `https://github.com/mingyunkang540/moneymarathon-web`입니다. Cloudflare Pages에서 main 브랜치에 연결해 공개 배포했습니다. 배포 결과물은 정적 `dist`뿐이며 Cloudflare Functions가 필요 없습니다. `public/_headers`는 보안 헤더를 제공합니다.
 
 ## 반응형·접근성·성능
 

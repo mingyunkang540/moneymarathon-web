@@ -78,4 +78,4 @@
 
 ## Open questions
 - [x] Actual Google Play listing URL: owner-provided com.minigyunilab.moneymarathon in src/config.ts; optional VITE_PLAY_STORE_URL override.
-- [ ] Production domain: assumed https://moneymarathon.pages.dev; update metadata, robots, and sitemap if different.
+- [x] Production domain: https://moneymarathon-web.pages.dev; metadata, robots, and sitemap match this address.
